@@ -3,98 +3,258 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Balloon Artist</title>
-    <link href="https://fonts.googleapis.com/css2?family=Liu+Jian+Mao+Cao&family=Noto+Sans+HK:wght@900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Liu+Jian+Mao+Cao&family=Noto+Sans+HK:wght@900&family=Zhi+Mang+Xing&display=swap" rel="stylesheet">
+    <title>猎天使魔女</title>
     <style>
-        #title {
-            color:#1C1C1C;
-            font-size:50px;
-            font-weight:500;
-            text-align: center;
-            font-family: 'Zhi Mang Xing', cursive;
-        }
-        h2{
-            color:#1C1C1C;
-            font-size:35px;
-            font-weight:300;
-            text-align: center;
-            font-family: 'Zhi Mang Xing', cursive;
-        }
-        h3{
-            color:#1C1C1C;
-            font-size:40px;
-            text-align: center;
-            font-family: 'Zhi Mang Xing', cursive;
-        }
-        #tribute-info{
-            color:#1C1C1C;
-            font-weight:100;
-            line-height:35px;
-            font-size:25px;
-            text-align: center;
-            font-family: 'Zhi Mang Xing', cursive;
-            border:5px solid #E6E6E6;
-            border-radius:25px;
-        }
-        .smaller-image{
-            height:400px;
-            border:10px solid #E6E6E6;
-            border-radius:25px;
-            margin: auto;
-            text-align:center;
-        }
-        #img-div{
-            margin:auto;
-              text-align:center;
-        }
-        body{
-            background:linear-gradient(35deg, #CCFFFF, #FFCCCC);
-        }
-        .bottom{
-            color:#1C1C1C;
-            font-weight:50;
-            font-size:35px;
-            text-align: center;
-            font-family: 'Zhi Mang Xing', cursive;
-            background-color:#D8D8D8;
-            border:0px solid #E6E6E6;
-            border-radius:10px;
-        }
+      * {
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    width: auto;
+    height: 600px;
+    background-image: url(http://i1.fuimg.com/727097/72b182817ed7bb09.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+#img-2{
+  height:100px;
+  width:100px;
+   animation: img-rotate 10s infinite linear;
+}
+@keyframes img-rotate{
+ from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(359deg);
+    
+	}
+}
+
+.content .title {
+    color: #FFFFFF;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    width: max-content;
+    margin: 0 auto;
+    padding: 15px;
+  position:fixed;
+  top:0;
+  right:0;
+}
+.text {
+    font-size: 30px;
+    background:rgb(23,3,4);
+  background-size: cover;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.text p {
+    color: red;
+    text-align: center;  
+    font-style: italic;
+    text-shadow: 2px 2px 2px #95929B;
+    text-transform: uppercase;
+}
+#vedio{
+  padding:30px;
+}
+
+
+/* movies */
+.movies {
+     background:rgb(23,3,4);
+    color: white;
+    padding-top: 20px;
+}
+
+.movies .h2 h2 {
+    font-size: 35px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    width: fit-content;
+    padding: 20px;
+    border-color: white;
+}
+
+/* card  */
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+}
+.card .right img {
+    width: 300px;
+    height: 300px;
+    padding: 15px;
+    object-fit: cover;
+ 
+}
+.card .left h2 {
+    font-size: 35px;
+    padding-bottom: 20px;
+}
+.card .left p {
+    line-height: 1.5rem;
+    padding-right: 20px;
+}
+#img-1{
+  width: 150px;
+    height: 400px;
+}
+#mp3{
+  padding:10px;
+  height:20px;
+  width:100px;
+}
+
+@media (max-width : 1000px) {
+    .card {
+        width: auto;
+        flex-direction: column;
+        text-align: center;
+    }
+    .card .right img {
+        padding: 25px;
+    }
+    .card .left {
+        padding: 15px;
+    }
+
+}
+/* end */
+.end {
+    width: 100%;
+    height: 600px;
+    background-image: url(http://i1.fuimg.com/727097/0dd38ce395d4e64a.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    transform: skew(0deg,5deg);
+    margin: 55px 0;
+}
+footer {
+    text-align: center;
+    height: 200px;
+    background:rgb(23,3,4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+footer .p {
+    font-size: 35px;
+    padding: 20px;
+}
+footer .p a {
+    color: #AED3DE;
+}
+
     </style>
 </head>
 <body>
 
+<div class="all">
+  <div class="content" id="content1">
+    <div class="title">
+     <div>
+  <img id="img-2" src="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1343810636,402552190&fm=26&gp=0.jpg" alt="">
+  <nav id="nav-bar">
+    <p><a href="#content1">主页</a>
+      </p>
+    <p><a href="#profile">介绍</a>
+      </p>
+    <p><a href="#footer1">支持</a>
+      </p>
+    <p> <audio id="mp3" loop="loop" autoplay="autoplay"controls>
+  <source src="https://vgmdownloads.com/soundtracks/bayonetta/emhkgbog/1-08.%20Fly%20Me%20To%20The%20Moon%20%28%E2%88%9E%20Climax%20Mix%29.mp3" type="audio/ogg">
+</audio></p>
+    </nav>
+  </div>
+    </div>
+  </div>
+  <div class="text">
+  
+  <p>Aru farl bamah!</p>
+  </div>
+  <div class="movies">
+    <div class="h2">
+      <h2 id="profile">游戏介绍</h2>
+    </div>
 
-<main id="main">
-    <div >
-        <h1 id="title">一个真正充满魔法的气球大师</h1>
+    <div class="card">
+      <div class="left">
+        <iframe id="vedio" width="500" height="400" src="https://www.youtube.com/embed/qqYZQigBZ9M" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="right">
+        <iframe  width="500" height="400" src="https://www.youtube.com/embed/_XJj0iB5TtA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
     </div>
-    <hr />
-    <div>
-    <h2>SYAN</h2>
-        </div>
-        <div id="img-div" >
-            <a id="tribute-link" href = "http://syansan.com/"  target = "_blank"><img id="image" class="smaller-image" src="https://hongkongliving.b-cdn.net/wp-content/uploads/2020/01/IPG_13_Balloon-Artist-Syan-Japan-01.jpg" ar arl=""></a>
-        </div>
-<div>
-        <h3>简介</h3>
-        <div id="tribute-info">
-            <p>
-                拥有20多年的气球经历，他于2009年转向专业表演者。
-                2015年，他赢得了比利时气球世界锦标赛的舞台比赛，并被公认为气球表演者世界冠军。</p>
-            <p>
-                他擅长以日本最好的速度和技术制作时尚的表演风格，特殊的头和神奇的作品。
-            </p><p>
-            气球表演不仅体现了作品的质量，而且极大地扩大了气球的吸引力和可能性，该表演融合了许多超出预期的发展，而因迷人的完成过程而又不使观众感到厌倦，被称为“气球表演的新维度。 由于他的外表和表演风格，也被称为
-            “气球贵族”和“气球魔术师” </p><p>他每年演出400多个舞台。近年来，人们对包括日本服装在内的表演给予了高度评价，自2013年以来，他已受邀前往气球之乡纽约。巴鲁克大学（Baruch College）在纽约的14年历史同样取得了巨大的成功，表演也加入了和服表演。</p><p>除了活跃于迪斯尼度假胜地IKSPIARI的表演，他还被各种媒体报道。 他还活跃于艺术家，在担任表演者期间，几乎每年都在比赛中获奖。 2009年度转弯职业选手1年是日本 “ JBAN （Jeban） ”，“ QBAC ” 三项主要赛事的热气球他在日本赢得了“ （ Cueback ） ”和“ Twisters”
-            所有奖项，这是他的第一项壮举，目前他在每届锦标赛中均以讲师和嘉宾身份活跃。</p><p>
-            作品是通过融合表演获得的表现力而创作的，气球公仔的曲目有900多种，从基本动物到受欢迎的角色！“ 气球森林 ” 是日本最大的气球网站之一，介绍了如何制作气球作品，是全世界许多人进入气球艺术的门户，也是气球艺术的先驱者之一。</p>
-        </div>
+
+    <div class="card">
+      <div class="left">
+        <h2>贝优妮塔(Bayonetta）</h2>
+        <p>国内玩家俗称她为“贝姐”，超越数百年时间在现代苏醒的迷一样的魔女。
+可以使用强大无比的魔力，一直持续着与天上的使者们作战着。其战斗的原因和身世都被迷团所覆盖。
+使用双手双脚上装备的四支枪和头发所寄宿的魔力进行战斗。
+头发寄宿有强大魔兽，可以通过召唤它来啃噬天使。</p>
+      </div>
+      <div class="right">
+        <img src="https://www.smashbros.com/assets_v2/img/fighter/bayonetta/main2.png" alt="">
+      </div>
     </div>
-        <div class="bottom">
-            <p >&copy;在此点击了解<a href = "http://www.madeinjapanny.com/artist-bio-syan.html"  target = "_blank" >更多</a></p></div>
-</main>
+
+    <div class="card">
+      <div class="left">
+        <h2>贞德（Jeanne）</h2>
+        <p>使用和贝优妮塔同等风格和魔力的迷一样的女人。有最强魔女之称，与贝优妮塔是宿敌也是朋友，保护着贝优妮塔，也是封印贝优妮塔之人
+现出身姿并使用冷刺一样的眼神挑衅贝优妮塔，似乎掌握了若干贝优妮塔身世的信息，不过其目的完全不明。 使用双手双脚上装备的四支枪战斗，同时一路追踪贝优妮塔。</p>
+      </div>
+      <div class="right">
+        <img src="https://i.redd.it/stgo06qmp6331.jpg" alt="">
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="left">
+        <h2>罗丹（Rodin）</h2>
+        <p>在地狱之门经营酒馆的男人，表面是酒馆经营者，实际上是武器供应商。
+他那强壮的身躯常给人以强烈的压迫感，同时他还可以为贝优妮塔提供大量的武器。
+他的身世等信息都是谜团。他是贝优妮塔名字的命名者。</p>
+      </div>
+      <div class="right">
+        <img id="img-1" src="https://vignette.wikia.nocookie.net/bayonetta/images/a/a1/RodinRender.png/revision/latest?cb=20141109104022" alt="">
+      </div>
+    </div>
+
+    <div class="end">
+
+    </div>
+    <footer id="footer1">
+      <p class="p">点击查看
+        <a href="https://www.platinumgames.com/games/bayonetta?age-verified=153d31c4f1">更多</a>
+      </p>
+      <div>
+        <p class="p1">DESGINED BY Masaka</p>
+      </div>
+    </footer>
+  </div>
+</div>
 
 </body>
 </html>
